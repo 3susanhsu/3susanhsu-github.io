@@ -1,13 +1,960 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif, 'Microsodft JhengHei', "Open Sans";
+        }
+
+        #logo {
+            width: 100%;
+        }
+
+        .pcoded-navbar .pcoded-inner-navbar li.pcoded-menu-caption {
+            font-size: 14px;
+        }
+
+        body.layout-6 {
+            background: #02465c;
+        }
+    </style>
 </head>
-<body>
-    <h1>This is my First GitHub Page</h1>
-    
+
+<body class="layout-6">
+    <!-- [ Pre-loader ] start -->
+    <div class="loader-bg">
+        <div class="loader-track">
+            <div class="loader-fill"></div>
+        </div>
+    </div>
+    <!-- [ Pre-loader ] End -->
+    <!-- [ navigation menu ] start -->
+    <nav class="pcoded-navbar menu-light brand-lightblue icon-colored menupos-static">
+        <!-- <nav class="pcoded-navbar"> -->
+        <div class="navbar-wrapper">
+            <div class="navbar-brand header-logo">
+                <a href="index.html" class="b-brand">
+                    <div class="b-bg">
+                        <img id="logo" src="./logo/logo-1.png" alt="臺灣產物保險">
+                    </div>
+
+                    <span class="b-title">臺灣產物保險</span>
+                </a>
+                <a class="mobile-menu" id="mobile-collapse" href="javascript:"><span></span></a>
+            </div>
+            <div class="slimScrollDiv navbar-content"
+                style="position: relative; overflow: hidden; width: 100%; height: calc(100% - 70px);">
+                <ul class="nav pcoded-inner-navbar">
+                    <li class="nav-item pcoded-menu-caption">
+                        <label>權限設定</label>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sample-page.html" class="nav-link">
+                            <span class="pcoded-micon"><i class="feather icon-sidebar"></i></span>
+                            <span class="pcoded-mtext">Menu 設定</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link ">
+                            <span class="pcoded-micon"><i class="feather icon-airplay"></i></span>
+                            <span class="pcoded-mtext">專案管理</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link ">
+                            <span class="pcoded-micon"><i class="feather icon-users"></i></span>
+                            <span class="pcoded-mtext">群組設定</span>
+                        </a>
+                    </li>
+                    <li class="nav-item pcoded-menu-caption">
+                        <label>表單樣板</label>
+                    </li>
+                    <li class="nav-item">
+                        <a href="SimpleForm.html" class="nav-link">
+                            <span class="pcoded-micon"><i class="feather icon-file-text"></i></span>
+                            <span class="pcoded-mtext">一般表單</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="AdvForm.html" class="nav-link">
+                            <span class="pcoded-micon"><i class="feather icon-check-square"></i></span>
+                            <span class="pcoded-mtext">進階表單</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- [ navigation menu ] end -->
+    <!-- [ Header ] start -->
+    <header class="navbar pcoded-header navbar-expand-lg navbar-light">
+        <div class="m-header">
+            <a class="mobile-menu" id="mobile-collapse1" href="javascript:"><span></span></a>
+            <a href="index.html" class="b-brand">
+                <div class="b-bg">
+                    <img id="logo" src="./logo/logo-1.png" alt="臺灣產物保險">
+                </div>
+                <span class="b-title">臺灣產物保險</span>
+            </a>
+        </div>
+        <a class="mobile-menu" id="mobile-header" href="javascript:">
+            <i class="feather icon-more-horizontal"></i>
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li><a href="javascript:" class="full-screen" onclick="javascript:toggleFullScreen()"><i
+                            class="feather icon-maximize"></i></a></li>
+
+            </ul>
+            <ul class="navbar-nav ml-auto">
+
+                <li>
+                    <div class="dropdown drp-user">
+                        <a href="javascript:" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="icon feather icon-settings"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right profile-notification">
+                            <div class="pro-head">
+                                <img src="./assets/images/user/avatar-1.jpg" class="img-radius"
+                                    alt="User-Profile-Image">
+                                <span>John Doe</span>
+                                <a href="auth-signin.html" class="dud-logout" title="Logout">
+                                    <i class="feather icon-log-out"></i>
+                                </a>
+                            </div>
+                            <ul class="pro-body">
+                                <li><a href="javascript:" class="dropdown-item"><i class="feather icon-settings"></i>
+                                        Settings</a></li>
+                                <li><a href="javascript:" class="dropdown-item"><i class="feather icon-user"></i>
+                                        Profile</a></li>
+                                <li><a href="message.html" class="dropdown-item"><i class="feather icon-mail"></i> My
+                                        Messages</a></li>
+                                <li><a href="auth-signin.html" class="dropdown-item"><i class="feather icon-lock"></i>
+                                        Lock Screen</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- [ Header ] end -->
+
+
+    <!-- [ Main Content ] start -->
+    <div class="pcoded-main-container">
+        <div class="pcoded-wrapper">
+            <div class="pcoded-content">
+                <div class="pcoded-inner-content">
+                    <!-- [ breadcrumb ] start -->
+                    <div class="page-header">
+                        <div class="page-block">
+                            <div class="row align-items-center">
+                                <div class="col-md-12">
+                                    <div class="page-header-title">
+                                        <h5 class="m-b-10">表單樣板</h5>
+                                    </div>
+                                    <ul class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="index.html"><i
+                                                    class="feather icon-home"></i></a></li>
+                                        <li class="breadcrumb-item"><a href="javascript:">Form Componants</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript:">Form Elements</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- [ breadcrumb ] end -->
+                    <div class="main-body">
+                        <div class="page-wrapper">
+                            <!-- [ Main Content ] start -->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5>一般樣板（格式一）</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5>旅遊綜合保險-報價單新增</h5>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label">報價單號</label>
+                                                        <input placeholder="請輸報價單號" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label class="form-label">保險期間</label>
+                                                        <input placeholder="YYYY/MM/DD" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label class="form-label">電話</label>
+                                                        <input placeholder="請輸入聯絡電話" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label class="form-label">身份證字號</label>
+                                                        <input placeholder="請輸入ID號碼" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label class="form-label">地址</label>
+                                                        <input placeholder="請輸入您的地址" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label">保險期間</label>
+                                                        <input placeholder="YYYY/MM/DD" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label">-</label>
+                                                        <input placeholder="YYYY/MM/DD" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label">旅遊目的</label>
+                                                        <div>
+                                                            <div class="d-inline">
+                                                                <div class="radio d-inline radio-fill radio-primary">
+                                                                    <input name="primary-radio-inline-fill-1"
+                                                                        type="radio" id="primary-radio-in-fill-1"
+                                                                        class="form-control" checked="">
+                                                                    <label for="primary-radio-in-fill-1"
+                                                                        class="cr form-label">團體觀光</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-inline">
+                                                                <div class="radio d-inline radio-fill radio-primary">
+                                                                    <input name="primary-radio-inline-fill-1"
+                                                                        type="radio" id="primary-radio-in-fill-2"
+                                                                        class="form-control">
+                                                                    <label for="primary-radio-in-fill-2"
+                                                                        class="cr form-label">個人旅遊</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-inline">
+                                                                <div class="radio d-inline radio-fill radio-primary">
+                                                                    <input name="primary-radio-inline-fill-1"
+                                                                        type="radio" id="primary-radio-in-fill-3"
+                                                                        class="form-control">
+                                                                    <label for="primary-radio-in-fill-3"
+                                                                        class="cr form-label">出差</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-inline">
+                                                                <div class="radio d-inline radio-fill radio-primary">
+                                                                    <input name="primary-radio-inline-fill-1"
+                                                                        type="radio" id="primary-radio-in-fill-4"
+                                                                        class="form-control">
+                                                                    <label for="primary-radio-in-fill-4"
+                                                                        class="cr form-label">探親</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-inline">
+                                                                <div class="radio d-inline radio-fill radio-primary">
+                                                                    <input name="primary-radio-inline-fill-1"
+                                                                        type="radio" id="primary-radio-in-fill-5"
+                                                                        class="form-control">
+                                                                    <label for="primary-radio-in-fill-5"
+                                                                        class="cr form-label">遊學</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-inline">
+                                                                <div class="radio d-inline radio-fill radio-primary">
+                                                                    <input name="primary-radio-inline-fill-1"
+                                                                        type="radio" id="primary-radio-in-fill-6"
+                                                                        class="form-control">
+                                                                    <label for="primary-radio-in-fill-6"
+                                                                        class="cr form-label">其它</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label">旅遊地區</label>
+                                                        <div>
+                                                            <div class="d-inline">
+                                                                <div class="radio d-inline radio-fill radio-primary">
+                                                                    <input name="primary-radio-inline-fill-2"
+                                                                        type="radio" id="primary-area-1"
+                                                                        class="form-control" checked="">
+                                                                    <label for="primary-area-1"
+                                                                        class="cr form-label">臺澎金馬</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-inline">
+                                                                <div class="radio d-inline radio-fill radio-primary">
+                                                                    <input name="primary-radio-inline-fill-2"
+                                                                        type="radio" id="primary-area-2"
+                                                                        class="form-control">
+                                                                    <label for="primary-area-2"
+                                                                        class="cr form-label">大陸</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-inline">
+                                                                <div class="radio d-inline radio-fill radio-primary">
+                                                                    <input name="primary-radio-inline-fill-2"
+                                                                        type="radio" id="primary-area-3"
+                                                                        class="form-control">
+                                                                    <label for="primary-area-3"
+                                                                        class="cr form-label">美加</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-inline">
+                                                                <div class="radio d-inline radio-fill radio-primary">
+                                                                    <input name="primary-radio-inline-fill-2"
+                                                                        type="radio" id="primary-area-4"
+                                                                        class="form-control">
+                                                                    <label for="primary-area-4"
+                                                                        class="cr form-label">歐洲</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-inline">
+                                                                <div class="radio d-inline radio-fill radio-primary">
+                                                                    <input name="primary-radio-inline-fill-2"
+                                                                        type="radio" id="primary-area-5"
+                                                                        class="form-control">
+                                                                    <label for="primary-area-5"
+                                                                        class="cr form-label">國外美加</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center">
+                                                <div class="col-md-10">
+                                                    <div class="card text-white bg-secondary mb-3">
+                                                        <div class="card-header">其它附加保險</div>
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="form-label">[D]
+                                                                            旅遊期間居住所第三人責任保險</label>
+                                                                        <div>
+                                                                            <div class="d-inline">
+                                                                                <div
+                                                                                    class="radio d-inline radio-fill radio-primary">
+                                                                                    <input
+                                                                                        name="primary-radio-inline-fill-3"
+                                                                                        type="radio" id="primary-1"
+                                                                                        class="form-control"
+                                                                                        checked="true">
+                                                                                    <label for="primary-1"
+                                                                                        class="cr form-label">不保</label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="d-inline">
+                                                                                <div
+                                                                                    class="radio d-inline radio-fill radio-primary">
+                                                                                    <input
+                                                                                        name="primary-radio-inline-fill-3"
+                                                                                        type="radio" id="primary-2"
+                                                                                        class="form-control">
+                                                                                    <label for="primary-2"
+                                                                                        class="cr form-label">25
+                                                                                        萬元</label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="d-inline">
+                                                                                <div
+                                                                                    class="radio d-inline radio-fill radio-primary">
+                                                                                    <input
+                                                                                        name="primary-radio-inline-fill-3"
+                                                                                        type="radio" id="primary-3"
+                                                                                        class="form-control">
+                                                                                    <label for="primary-3"
+                                                                                        class="cr form-label">50
+                                                                                        萬元</label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="d-inline">
+                                                                                <div
+                                                                                    class="radio d-inline radio-fill radio-primary">
+                                                                                    <input
+                                                                                        name="primary-radio-inline-fill-3"
+                                                                                        type="radio" id="primary-4"
+                                                                                        class="form-control">
+                                                                                    <label for="primary-4"
+                                                                                        class="cr form-label">100
+                                                                                        萬元（旅寶）</label>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="form-label">[E]
+                                                                            旅遊期間居住所動產損失保險</label>
+                                                                        <div>
+                                                                            <div class="d-inline">
+                                                                                <div
+                                                                                    class="radio d-inline radio-fill radio-primary">
+                                                                                    <input
+                                                                                        name="primary-radio-inline-fill-4"
+                                                                                        type="radio" id="primary-add-1"
+                                                                                        class="form-control" checked>
+                                                                                    <label for="primary-add-1"
+                                                                                        class="cr form-label">不保</label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="d-inline">
+                                                                                <div
+                                                                                    class="radio d-inline radio-fill radio-primary">
+                                                                                    <input
+                                                                                        name="primary-radio-inline-fill-4"
+                                                                                        type="radio" id="primary-add-2"
+                                                                                        class="form-control">
+                                                                                    <label for="primary-add-2"
+                                                                                        class="cr form-label">25
+                                                                                        萬元</label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="d-inline">
+                                                                                <div
+                                                                                    class="radio d-inline radio-fill radio-primary">
+                                                                                    <input
+                                                                                        name="primary-radio-inline-fill-4"
+                                                                                        type="radio" id="primary-add-3"
+                                                                                        class="form-control">
+                                                                                    <label for="primary-add-3"
+                                                                                        class="cr form-label">50
+                                                                                        萬元（旅寶）</label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="d-inline">
+                                                                                <div
+                                                                                    class="radio d-inline radio-fill radio-primary">
+                                                                                    <input
+                                                                                        name="primary-radio-inline-fill-4"
+                                                                                        type="radio" id="primary-add-4"
+                                                                                        class="form-control">
+                                                                                    <label for="primary-add-4"
+                                                                                        class="cr form-label">100
+                                                                                        萬元</label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="row justify-content-center">
+                                                <button class="btn btn-primary ml-2" type="submit">試算資料確認</button>
+                                                <button class="btn btn-primary ml-2" type="submit">報價單製作</button>
+                                                <button class="btn btn-primary ml-2" type="submit">清除</button>
+                                                <button class="btn btn-primary ml-2" type="submit">檢視報價單</button>
+                                                <button class="btn btn-primary ml-2" type="submit">離開</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5>一般樣板（格式二）</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5>住火報價單作業</h5>
+                                            <h6>案件資訊</h6>
+                                            <hr>
+                                            <div class="row mb-3">
+                                                <div class="col-md-4">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span id="inputGroup-sizing-default"
+                                                                class="input-group-text">險種</span>
+                                                        </div>
+                                                        <input class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span id="inputGroup-sizing-default"
+                                                                class="input-group-text">報價單號碼</span>
+                                                        </div>
+                                                        <input class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span id="inputGroup-sizing-default"
+                                                                class="input-group-text">費率基準日</span>
+                                                        </div>
+                                                        <input class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <h6>保險內容</h6>
+                                            <hr>
+                                            <div class="row mb-3">
+                                                <div class="col-md-4">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">保險期間</span>
+                                                        </div>
+                                                        <input class="form-control" placeholder="YYYY/MM/DD">
+                                                        <input class="form-control" placeholder="YYYY/MM/DD">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span id="custom-addons1"
+                                                                class="input-group-text">費率組合</span>
+                                                        </div>
+                                                        <select class="custom-select form-control">
+                                                            <option>請選擇費率組合...</option>
+                                                            <option>經代人、業務員</option>
+                                                            <option>直接業務</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span id="inputGroup-sizing-default"
+                                                                class="input-group-text">業經代人</span>
+                                                        </div>
+                                                        <input class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-4">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span id="inputGroup-sizing-default"
+                                                                class="input-group-text">受理編號</span>
+                                                        </div>
+                                                        <input class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span id="inputGroup-sizing-default"
+                                                                class="input-group-text">影像編號</span>
+                                                        </div>
+                                                        <input class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span id="inputGroup-sizing-default"
+                                                                class="input-group-text">續保 轉保件</span>
+                                                        </div>
+                                                        <input class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-12">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span id="inputGroup-sizing-default"
+                                                                class="input-group-text">標的物地址</span>
+                                                        </div>
+                                                        <input class="form-control">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-12">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span id="inputGroup-sizing-default"
+                                                                class="input-group-text">建物</span>
+                                                        </div>
+                                                        <input class="form-control">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-4">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span id="inputGroup-sizing-default"
+                                                                class="input-group-text">建築年份</span>
+                                                        </div>
+                                                        <input class="form-control" placeholder="YYYY">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span id="inputGroup-sizing-default"
+                                                                class="input-group-text">面積</span>
+                                                        </div>
+                                                        <input class="form-control">
+                                                    </div>
+                                                </div>坪
+                                                <div class="col-md-3">
+                                                    <button type="button" class="btn btn-success btn-sm">預設保額</button>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-4">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span id="inputGroup-sizing-default"
+                                                                class="input-group-text">火險保額</span>
+                                                        </div>
+                                                        <input class="form-control">
+                                                    </div>
+                                                </div>萬
+                                                <div class="col-md-4">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span id="inputGroup-sizing-default"
+                                                                class="input-group-text">地震保額</span>
+                                                        </div>
+                                                        <input class="form-control">
+                                                    </div>
+                                                </div>萬
+                                                <div class="col-md-3">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span id="inputGroup-sizing-default"
+                                                                class="input-group-text">加保動產</span>
+                                                        </div>
+                                                        <input class="form-control">
+                                                    </div>
+                                                </div>萬
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h5 class="mt-3">颱風洪水</h5>
+                                                    <hr>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <h5 class="mt-3">擴大地震</h5>
+                                                    <hr>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <h5 class="mt-3">超額地震</h5>
+                                                    <hr>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-2">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span id="inputGroup-sizing-default"
+                                                                class="input-group-text">建物</span>
+                                                        </div>
+                                                        <input class="form-control" placeholder="萬元">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span id="inputGroup-sizing-default"
+                                                                class="input-group-text">動產</span>
+                                                        </div>
+                                                        <input class="form-control" placeholder="萬元">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span id="inputGroup-sizing-default"
+                                                                class="input-group-text">建物</span>
+                                                        </div>
+                                                        <input class="form-control" placeholder="萬元">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span id="inputGroup-sizing-default"
+                                                                class="input-group-text">動產</span>
+                                                        </div>
+                                                        <input class="form-control" placeholder="萬元">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span id="inputGroup-sizing-default"
+                                                                class="input-group-text">建物</span>
+                                                        </div>
+                                                        <input class="form-control" placeholder="萬元">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span id="inputGroup-sizing-default"
+                                                                class="input-group-text">動產</span>
+                                                        </div>
+                                                        <input class="form-control" placeholder="萬元">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="row justify-content-center">
+                                                <button class="btn btn-primary ml-2" type="submit">確認報價</button>
+                                                <button class="btn btn-primary ml-2" type="submit">列印報價單</button>
+                                                <button class="btn btn-primary ml-2" type="submit">列印要報書</button>
+                                                <button class="btn btn-primary ml-2" type="submit">列印繳款單</button>
+                                            </div>
+
+
+
+
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5>一般樣板（格式三）</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5>住火報價查詢</h5>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-3 col-form-label">報價日期</label>
+                                                        <div class="col-sm-9">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="YYYY/MM/DD ~ YYYY/MM/DD ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-3 col-form-label">部門</label>
+                                                        <div class="col-sm-9">
+                                                            <select id="inputState" class="form-control">
+                                                                <option selected>請選擇部門</option>
+                                                                <option value=1A>1A 營業一部</option>
+                                                                <option value=63>63 直效行銷部</option>
+                                                                <option value=66>66 經紀業務部</option>
+                                                                <option value=68>68 金融通路部</option>
+                                                                <option value=12>12 新竹分公司</option>
+                                                                <option value=13>13 台中分公司</option>
+                                                                <option value=14>14 嘉義分公司</option>
+                                                                <option value=15>15 台南分公司</option>
+                                                                <option value=16>16 高雄分公司</option>
+                                                                <option value=17>17 花蓮分公司</option>
+                                                                <option value=18>18 宜蘭分公司</option>
+                                                                <option value=19>19 彰化分公司</option>
+                                                                <option value=1F>1F 板橋分公司</option>
+                                                                <option value=21>21 桃園分公司</option>
+                                                                <option value=11>11 基隆分公司</option>
+                                                                <option value=22>22 屏東分公司</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-3 col-form-label">保險單號</label>
+                                                        <div class="col-sm-9">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="請輸入報價單號">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-3 col-form-label">要保人ID</label>
+                                                        <div class="col-sm-9">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="請輸入要保人ID">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-3 col-form-label">被保人ID</label>
+                                                        <div class="col-sm-9">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="請輸入被保人ID">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-3 col-form-label">服務人員</label>
+                                                        <div class="col-sm-9">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="請輸入服務人員">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-3 col-form-label">險種</label>
+                                                        <div class="col-sm-9">
+                                                            <select id="inputState" class="form-control">
+                                                                <option selected>請選擇險種</option>
+                                                                <option value="">全部</option>
+                                                                <option value=1100>1100 住宅保單</option>
+                                                                <option value=1700>1700 居家綜合</option>
+                                                                <option value=1701>1701 居動綜合</option>
+                                                                <option value=1800>1800 住宅綜合</option>
+                                                                <option value=1900>1900 居綜甲式</option>
+                                                            </select> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-3 col-form-label">報價狀態</label>
+                                                        <div class="col-sm-9 mt-2">
+                                                            <div class="d-inline">
+                                                                <div class="radio d-inline radio-fill radio-primary">
+                                                                    <input name="primary-radio-inline-fill-5"
+                                                                        type="radio" id="primary-status-1"
+                                                                        class="form-control" checked>
+                                                                    <label for="primary-status-1"
+                                                                        class="cr form-label">全部</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-inline">
+                                                                <div class="radio d-inline radio-fill radio-primary">
+                                                                    <input name="primary-radio-inline-fill-5"
+                                                                        type="radio" id="primary-status-2"
+                                                                        class="form-control">
+                                                                    <label for="primary-status-2"
+                                                                        class="cr form-label">已報價</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-inline">
+                                                                <div class="radio d-inline radio-fill radio-primary">
+                                                                    <input name="primary-radio-inline-fill-5"
+                                                                        type="radio" id="primary-status-3"
+                                                                        class="form-control">
+                                                                    <label for="primary-status-3"
+                                                                        class="cr form-label">已出單</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <br>
+                                            <div class="row justify-content-center">
+                                                <button class="btn btn-primary ml-2" type="submit">查詢</button>
+                                                <button class="btn btn-primary ml-2" type="submit">清除</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ Main Content ] end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- [ Main Content ] end -->
+
+    <!-- Warning Section Starts -->
+    <!-- Older IE warning message -->
+    <!--[if lt IE 11]>
+        <div class="ie-warning">
+            <h1>Warning!!</h1>
+            <p>You are using an outdated version of Internet Explorer, please upgrade
+               <br/>to any of the following web browsers to access this website.
+            </p>
+            <div class="iew-container">
+                <ul class="iew-download">
+                    <li>
+                        <a href="http://www.google.com/chrome/">
+                            <img src="assets/images/browser/chrome.png" alt="Chrome">
+                            <div>Chrome</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.mozilla.org/en-US/firefox/new/">
+                            <img src="assets/images/browser/firefox.png" alt="Firefox">
+                            <div>Firefox</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.opera.com">
+                            <img src="assets/images/browser/opera.png" alt="Opera">
+                            <div>Opera</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.apple.com/safari/">
+                            <img src="assets/images/browser/safari.png" alt="Safari">
+                            <div>Safari</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                            <img src="assets/images/browser/ie.png" alt="">
+                            <div>IE (11 & above)</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p>Sorry for the inconvenience!</p>
+        </div>
+    <![endif]-->
+    <!-- Warning Section Ends -->
+
+    <!-- Required Js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./assets/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="./pcoded.js"></script>
 </body>
+
+
 </html>
